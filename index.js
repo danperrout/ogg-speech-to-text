@@ -21,7 +21,7 @@ fs.readdir(testFolder, (err, files) => {
           let message = `
 =====================================
 File: ${file}
-Datetime: ${new Date().toLocaleString("pt-BR")}
+Datetime: ${new Date().toLocaleString(process.env.LANGUAGE)}
 -------------------------------------
 ${result}
 =====================================

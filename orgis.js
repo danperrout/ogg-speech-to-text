@@ -22,7 +22,7 @@ function speechExtractor(filePath) {
   const config = {
     encoding: "OGG_OPUS",
     sampleRateHertz: 16000,
-    languageCode: "pt-BR",
+    languageCode: process.env.LANGUAGE,
     //audio_channel_count:2
   };
 

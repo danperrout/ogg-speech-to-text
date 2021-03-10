@@ -24,6 +24,7 @@ GOOGLE_APPLICATION_CREDENTIALS=<YourGoogleApicredential.json>
 SOURCE_FOLDER=/Download/Path/of/ogg/files
 DESTINATION_FOLDER=./extracted_audios/
 LOG_FILE=log.txt
+LANGUAGE=pt-BR
 ```
 
 # Usage
