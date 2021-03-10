@@ -5,6 +5,10 @@ require("dotenv").config();
 const testFolder = process.env.SOURCE_FOLDER;
 var logStream = fs.createWriteStream(process.env.LOG_FILE, { flags: "a" });
 
+if (!fs.existsSync(process.env.DESTINATION_FOLDER)) {
+  fs.mkdirSync(process.env.DESTINATION_FOLDER);
+}
+
 fs.readdir(testFolder, (err, files) => {
   let i = 0;
   if (err) throw err;
