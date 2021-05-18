@@ -35,3 +35,6 @@ Run, in the terminal:
 `node index.js`
 
 Check the log file (LOG_FILE variable)
+The script checks for .ogg files inside the SOURCE_FOLDER.
+
+Then it extracts and, after, moves the file to the DESTINATION_FOLDER location.
